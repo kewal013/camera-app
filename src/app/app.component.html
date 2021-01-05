@@ -1,0 +1,9 @@
+<video id="live" autoplay muted #liveVideo></video>
+<video id="recorded" #recordedVideo></video>
+
+<div>
+	<button id="start" (click)="start()">Start camera</button>
+	<button id="record" (click)="startRecord()" >{{recordButton}}</button>
+	<button id="play" (click)="play()" >Play</button>
+	<button id="download" (click)="download()" >Download</button>
+</div>
