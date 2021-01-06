@@ -13,8 +13,8 @@ export class AppComponent {
     mediaRecorder: any;
     recordedBlob: any;
     recordButton: any = 'Start Recording';
-    @ViewChild('recordedVideo') recordedVideo: ElementRef;
-    @ViewChild('liveVideo') liveVideo: ElementRef;
+    @ViewChild('recordedVideo', { static: true }) recordedVideo: ElementRef;
+    @ViewChild('liveVideo', { static: true }) liveVideo: ElementRef;
     cameraStream: any;
 
     constructor() { }
